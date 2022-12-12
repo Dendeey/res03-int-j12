@@ -14,6 +14,13 @@ body {
 body .hidden {
   display: none;
 }
+body a {
+  color: black;
+  text-decoration: none;
+}
+body a:hover {
+  background-color: #e49c86;
+}
 body > header {
   height: 10vh;
   width: 100vw;
@@ -37,58 +44,167 @@ body > header nav figure {
 body > header nav figure img {
   width: 5vw;
   height: 3vh;
+  padding-left: 3vw;
 }
 body > header nav ul:first-of-type {
   align-self: center;
-  padding-left: 5vw;
+  padding-left: 4vw;
+  font-weight: bold;
 }
 body > header nav ul:first-of-type li {
   display: inline-block;
-  width: 16.6666666667%;
+  padding-left: 3vw;
+  color: black;
 }
 body > header nav ul:last-of-type {
   align-self: center;
+  padding-left: 0;
 }
 body > header nav ul:last-of-type li {
   display: inline-block;
-  width: 16.6666666667%;
+  padding-left: 1vw;
 }
 body > header nav ul:last-of-type .fas {
+  margin-right: 1vw;
   padding-right: 2vw;
-  border-right: 1px solid black;
+  border-right: 1px solid rgba(0, 0, 0, 0.35);
 }
 body > main {
-  margin: 0;
   padding-top: 10vh;
 }
 body > main #articles-aside {
   display: grid;
   grid-template-columns: 1fr 0.4fr;
-  margin-right: 5vw;
-  margin-left: 5vw;
+  margin-left: 6vw;
+  margin-right: 6vw;
 }
-body > main #articles-aside article:first-of-type {
+body > main #articles-aside > section {
   grid-column: 1/2;
 }
-body > main #articles-aside article:nth-of-type(2) {
-  grid-column: 1/2;
+body > main #articles-aside > section article:first-of-type figure img {
+  width: 100%;
+  height: 100%;
 }
-body > main #articles-aside article:nth-of-type(3) {
-  grid-column: 1/2;
+body > main #articles-aside > section article:first-of-type section header h2 {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 0;
 }
-body > main #articles-aside section {
-  grid-column: 1/2;
+body > main #articles-aside > section article:first-of-type section header h3 {
+  text-align: center;
+  font-size: 2em;
 }
-body > main #articles-aside article:nth-of-type(4) {
-  grid-column: 1/2;
+body > main #articles-aside > section article:first-of-type section header ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 0;
+  margin-bottom: 6vh;
+  padding-left: 18vw;
+  padding-right: 8vw;
 }
-body > main #articles-aside article:last-of-type {
-  grid-column: 1/2;
+body > main #articles-aside > section article:first-of-type section header ul li {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  font-size: 1em;
 }
-body > main #articles-aside section {
-  grid-column: 1/2;
+body > main #articles-aside > section article:first-of-type section p {
+  text-align: center;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  font-size: 1.2em;
+  margin-bottom: 7vh;
 }
-body > main #articles-aside aside {
+body > main #articles-aside > section article:first-of-type section footer h4 {
+  text-align: center;
+  font-size: 1em;
+}
+body > main #articles-aside > section article:nth-of-type(2) {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin: 3em;
+  background-color: #E8EDEA;
+}
+body > main #articles-aside > section article:nth-of-type(2) figure audio {
+  width: 100%;
+}
+body > main #articles-aside > section article:nth-of-type(2) section header h2 {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+body > main #articles-aside > section article:nth-of-type(2) section header h3 {
+  text-align: center;
+  font-size: 2em;
+}
+body > main #articles-aside > section article:nth-of-type(2) section header ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 0;
+  margin-bottom: 6vh;
+  padding-left: 14vw;
+  padding-right: 5vw;
+}
+body > main #articles-aside > section article:nth-of-type(2) section header ul li {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  font-size: 1em;
+}
+body > main #articles-aside > section article:nth-of-type(2) section p {
+  text-align: center;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  font-size: 1.2em;
+  margin-bottom: 7vh;
+}
+body > main #articles-aside > section article:nth-of-type(2) section footer h4 {
+  text-align: center;
+  font-size: 1em;
+}
+body > main #articles-aside > section article:nth-of-type(3) {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin: 3em;
+}
+body > main #articles-aside > section article:nth-of-type(3) figure {
+  margin: 0;
+}
+body > main #articles-aside > section article:nth-of-type(3) figure video {
+  width: 100%;
+}
+body > main #articles-aside > section article:nth-of-type(3) section header h2 {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+body > main #articles-aside > section article:nth-of-type(3) section header h3 {
+  text-align: center;
+  font-size: 2em;
+}
+body > main #articles-aside > section article:nth-of-type(3) section header ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 0;
+  margin-bottom: 6vh;
+  padding-left: 14vw;
+  padding-right: 5vw;
+}
+body > main #articles-aside > section article:nth-of-type(3) section header ul li {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  font-size: 1em;
+}
+body > main #articles-aside > section article:nth-of-type(3) section p {
+  text-align: center;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  font-size: 1.2em;
+  margin-bottom: 7vh;
+}
+body > main #articles-aside > section article:nth-of-type(3) section footer h4 {
+  text-align: center;
+  font-size: 1em;
+}
+body > main #articles-aside > aside {
   grid-column: 2/3;
 }
 
